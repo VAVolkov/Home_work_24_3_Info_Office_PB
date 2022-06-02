@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашние задания №24 </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Информация об отделениях ПриватБанка</h1>
+        <h2>Выберете область из списка</h2>
+        <select class="townNames">
+            <option value="Винницкая">Винницкая область</option>
+            <option value="Волынская">Волынская область</option>
+            <option value="Днепропетровская">Днепропетровская область</option>
+            <option value="Донецкая">Донецкая область</option>
+            <option value="Житомирская">Житомирская область</option>
+            <option value="Закарпатская">Закарпатская область</option>
+            <option value="Запорожская">Запорожская область</option>
+            <option value="Ивано-Франковская">Ивано-Франковская область</option>
+            <option value="Киевская">Киевская область</option>
+            <option value="Кировоградская">Кировоградская область</option>
+            <option value="Луганская">Луганская область</option>
+            <option value="Львовская">Львовская область</option>
+            <option value="Николаевская">Николаевская область</option>
+            <option value="Одесская">Одесская область</option>
+            <option value="Полтавская">Полтавская область</option>
+            <option value="Ровенская">Ровенская область</option>
+            <option value="Сумская">Сумская область</option>
+            <option value="Тернопольская">Тернопольская область</option>
+            <option value="Харьковская">Харьковская область</option>
+            <option value="Херсонская">Херсонская область</option>
+            <option value="Хмельницкая"> Хмельницкая область</option>
+            <option value="Черкасская">Черкасская область</option>
+            <option value="Черниговская">Черниговская область</option>
+            <option value="Черновицкая">Черновицкая область</option>
+        </select>
+
+        <ul>
+            <li class="office hide">
+                <h3>Номер отделения: 2943</h3>
+                <p> адрес: 49000, Днепропетровск, ул Титова 29-М
+                    <br> тел.: 8(056)373-33-54, 373-33-56 <br>
+                    email: <span>julija.tverdokhlebova@pbank.com.ua</span>
+                </p>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script src="js/createBaseJSON.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        let param = {
+            card: '.card',
+        };
+        const info = new InfoPB(param);
+        info.init();
+
+    </script>
+
+
+</body>
+
+</html>
